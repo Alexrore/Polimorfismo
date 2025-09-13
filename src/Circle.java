@@ -1,13 +1,14 @@
-public class Circle {
+public class Circle extends Shape {
     //Atributos
     protected double radius;
 
-    //Metodos
-    public double getRadius() {
-        return radius;
+    //Constructor
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
-    public double getArea() {
+    //Metodos
+    public double area() {
         return Math.PI * radius * radius;
     }
 

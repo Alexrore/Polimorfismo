@@ -1,13 +1,14 @@
-public class Square {
+public class Square extends Shape {
     //Atributos
     protected double l;
 
-    //Metodos
-    public double getl() {
-        return l;
+    //Constructor
+    public Square(double l) {
+        this.l = l;
     }
 
-    public double getArea() {
+    //Metodos
+    public double area() {
         return l*l;
     }
 }
